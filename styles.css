@@ -21,6 +21,8 @@
   --radius-card: 4px;
   --content-max: 922px;
   --sidebar-w: 336px;
+  --sidebar-sticky-gap: 40px;
+  --site-header-height: 96px;
   --radio-card-width: calc(50% - 8px);
 }
 
@@ -647,7 +649,7 @@ body.mod-nav-open {
   .sidebar {
     grid-area: sidebar;
     position: sticky;
-    top: 24px;
+    top: calc(var(--site-header-height) + var(--sidebar-sticky-gap));
     align-self: start;
     z-index: 2;
   }

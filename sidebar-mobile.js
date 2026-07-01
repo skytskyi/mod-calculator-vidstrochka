@@ -75,4 +75,22 @@
   });
 
   syncScrollInert();
+
+  var stickyNav = document.querySelector('nav[aria-label="Міністерство оборони України"]');
+
+  function syncStickyHeaderOffset() {
+    if (!stickyNav) return;
+    document.documentElement.style.setProperty(
+      "--site-header-height",
+      stickyNav.getBoundingClientRect().height + "px"
+    );
+  }
+
+  syncStickyHeaderOffset();
+  window.addEventListener("resize", syncStickyHeaderOffset);
+  window.addEventListener("load", syncStickyHeaderOffset);
+
+  if (stickyNav && typeof ResizeObserver !== "undefined") {
+    new ResizeObserver(syncStickyHeaderOffset).observe(stickyNav);
+  }
 })();
