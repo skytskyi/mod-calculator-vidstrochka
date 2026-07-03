@@ -40,7 +40,7 @@ const BASE_DEFERRAL_MONTHS = 6;
 const DAYS_PER_THIRTY_DAY_MONTH = 30;
 
 const CONTRACT_DURATION_MONTHS = {
-  [ContractType.ASSAULT]: 10,
+  [ContractType.ASSAULT]: 14,
   [ContractType.COMBAT]: 24,
   [ContractType.BASIC]: 24,
 };

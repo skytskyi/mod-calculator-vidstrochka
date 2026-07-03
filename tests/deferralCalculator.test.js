@@ -56,10 +56,10 @@ describe("calculateYearsAfter2022", () => {
 });
 
 describe("calculateContractEndDate", () => {
-  it("adds 10 months for assault contract", () => {
+  it("adds 14 months for assault contract", () => {
     const start = new Date(2026, 0, 1);
     expect(calculateContractEndDate(start, ContractType.ASSAULT)).toEqual(
-      new Date(2026, 10, 1)
+      new Date(2027, 2, 1)
     );
   });
 
@@ -91,8 +91,8 @@ describe("calculate", () => {
 
     expect(result.yearsBefore2022).toBe(1);
     expect(result.yearsAfter2022).toBe(4);
-    expect(result.contractEndDate).toEqual(new Date(2027, 6, 1));
-    expect(result.deferralEndDate).toEqual(new Date(2030, 2, 18));
+    expect(result.contractEndDate).toEqual(new Date(2027, 10, 1));
+    expect(result.deferralEndDate).toEqual(new Date(2030, 6, 16));
     expect(result.deferralDurationLabel).toBe("2 роки 8 місяців 17 днів");
 
     const combatLine = result.explanation.find(function (line) {
