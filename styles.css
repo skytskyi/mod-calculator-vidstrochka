@@ -1351,7 +1351,7 @@ body.mod-nav-open {
 .sidebar__card {
   position: relative;
   background: #fff;
-  padding: 20px 10px 40px;
+  padding: 20px 16px 40px;
   min-height: 478px;
 }
 
