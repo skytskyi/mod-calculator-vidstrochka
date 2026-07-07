@@ -16,7 +16,7 @@
   --orange: #f39200;
   --error: #ba0000;
   --footer-link: #f2f1e8;
-  --font: "e-Ukraine", system-ui, -apple-system, sans-serif;
+  --font: "e-Ukraine", pageFont, pageFont Fallback, system-ui, -apple-system, sans-serif;
   --radius-pill: 80px;
   --radius-card: 4px;
   --content-max: 922px;
