@@ -1114,6 +1114,25 @@ body.mod-nav-open {
   max-width: 100%;
 }
 
+@media (max-width: 499px) {
+  :root {
+    --radio-card-width: 100%;
+  }
+
+  .service-dates-row {
+    grid-template-columns: 1fr;
+  }
+
+  .service-dates-row--single {
+    max-width: 100%;
+  }
+
+  .date-field,
+  .tariff-stepper {
+    max-width: 100%;
+  }
+}
+
 .field__hint {
   margin: 0 0 8px;
   font-size: 13px;
