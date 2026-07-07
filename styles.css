@@ -791,7 +791,13 @@ body.mod-nav-open {
   display: grid;
   gap: 16px;
   margin-bottom: 16px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .radio-row:not(.radio-row--single) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .radio-row--single {
@@ -893,7 +899,13 @@ body.mod-nav-open {
 .combat-assignment-grid {
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .combat-assignment-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .combat-assignment-grid[data-layout="combat"] #combat-option-not-first-line {
