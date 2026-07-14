@@ -634,7 +634,7 @@ body.mod-nav-open {
       "intro ."
       "form sidebar";
     align-items: start;
-    column-gap: 40px;
+    column-gap: 134px;
     row-gap: 0;
   }
 
@@ -794,12 +794,6 @@ body.mod-nav-open {
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 700px) {
-  .radio-row:not(.radio-row--single) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .radio-row--single {
   grid-template-columns: 1fr;
   max-width: 100%;
@@ -822,7 +816,7 @@ body.mod-nav-open {
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  padding: 28px 16px;
+  padding: 20px 16px;
   background: #f5f5f2;
   border: 1px solid var(--border-card);
   border-radius: var(--radius-card);
@@ -900,12 +894,6 @@ body.mod-nav-open {
   display: grid;
   gap: 16px;
   grid-template-columns: 1fr;
-}
-
-@media (min-width: 700px) {
-  .combat-assignment-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .combat-assignment-grid[data-layout="combat"] #combat-option-not-first-line {
