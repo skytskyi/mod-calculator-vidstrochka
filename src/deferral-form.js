@@ -223,6 +223,14 @@ function collectMissing() {
     });
   }
 
+  if (!contractType) {
+    missing.push({
+      id: "field-contract-type",
+      label: "Тип контракту",
+      focusSelector: 'input[name="contractType"]',
+    });
+  }
+
   if (!parseDateInput("contract-start-date")) {
     missing.push({
       id: "field-contract-start",
@@ -231,13 +239,7 @@ function collectMissing() {
     });
   }
 
-  if (!contractType) {
-    missing.push({
-      id: "field-contract-type",
-      label: "Тип контракту",
-      focusSelector: 'input[name="contractType"]',
-    });
-  } else if (showsCombatAssignment(contractType) && !getSelectedCombatAssignment()) {
+  if (contractType && showsCombatAssignment(contractType) && !getSelectedCombatAssignment()) {
     missing.push({
       id: "field-combat-assignment",
       label: "Бойові завдання",
