@@ -789,7 +789,7 @@ body.mod-nav-open {
 
 .radio-row {
   display: grid;
-  gap: 16px;
+  gap: 8px;
   margin-bottom: 16px;
   grid-template-columns: 1fr;
 }
@@ -897,7 +897,7 @@ body.mod-nav-open {
 
 .combat-assignment-grid {
   display: grid;
-  gap: 16px;
+  gap: 8px;
   grid-template-columns: 1fr;
 }
 
