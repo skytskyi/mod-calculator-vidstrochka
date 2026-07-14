@@ -799,12 +799,6 @@ body.mod-nav-open {
   max-width: 100%;
 }
 
-@media (min-width: 700px) {
-  .radio-row--single {
-    max-width: var(--radio-card-width);
-  }
-}
-
 .radio-row .radio-card,
 .combat-assignment-grid .radio-card {
   width: 100%;
@@ -822,6 +816,17 @@ body.mod-nav-open {
   border-radius: var(--radius-card);
   cursor: pointer;
   min-height: 80px;
+}
+
+.radio-card:not(:has(.radio-card__term)) {
+  min-height: 0;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.radio-card:not(:has(.radio-card__term)) .radio-card__ui {
+  margin-top: 0;
 }
 
 .radio-card input {
